@@ -1,4 +1,21 @@
 # Backend dev technical test
+I create a Spring boot app that exposes the agreed REST API on port 5000.
+An important thing, when you set up this app in your IDE, you need to set the profile "local" like this:
+
+![image](https://user-images.githubusercontent.com/15210465/194866391-2cd32d72-f274-48dd-8a06-d428bed0dfcd.png)
+
+If you configure the IDE in this way, in the future we will be able to create more profiles to deploy to other environments (PRO, PRE, DES) and have different values in url.api.mocks (variable that I use to call the external API).
+
+![image](https://user-images.githubusercontent.com/15210465/194867010-fc59e2cf-81d4-48f9-8e8b-3b69c8611c72.png)
+
+I have done the test you give me and everything OK:
+
+![image](https://user-images.githubusercontent.com/15210465/194865946-cc8b948f-d711-4363-8833-f00ecfa5f841.png)
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
 We want to offer a new feature to our customers showing similar products to the one they are currently seeing. To do this we agreed with our front-end applications to create a new REST API operation that will provide them the product detail of the similar products for a given one. [Here](./similarProducts.yaml) is the contract we agreed.
 
 We already have an endpoint that provides the product Ids similar for a given one. We also have another endpoint that returns the product detail by product Id. [Here](./existingApis.yaml) is the documentation of the existing APIs.
